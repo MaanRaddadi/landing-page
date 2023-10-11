@@ -11,3 +11,7 @@ This project aims to give you real-world scenarios of manipulating the DOM. The 
 ## Links:-
 
 - [GitHub Repo](https://github.com/MaanRaddadi/landing-page)
+
+## Refrences:-
+
+[W3School](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp)
