@@ -10,5 +10,4 @@ This project aims to give you real-world scenarios of manipulating the DOM. The 
 
 ## Links:-
 
-- [Live Site](https://maanraddadi.github.io/landing-page/)
 - [GitHub Repo](https://github.com/MaanRaddadi/landing-page)
