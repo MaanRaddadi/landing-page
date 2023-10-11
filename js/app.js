@@ -27,10 +27,9 @@ const header = document.querySelector(".page__header");
 const footer = document.querySelector(".page__footer");
 const scrollBtn = document.getElementById("scrollBtn");
 
-// build the nav
+// Generating Navbar
 function navBuilder() {
   sectionsList.forEach((section) => {
-    //For each exsiting section add a li element
     const navLink = document.createElement("li");
     // Adding the corresponding id to each nav link and the corresponding dataset
     navLink.insertAdjacentHTML(
@@ -38,7 +37,6 @@ function navBuilder() {
       `<a class="menu__link" id="navli" href="#${section.id}">${section.dataset.nav}</a>`
     );
 
-    // Add the generated nav link to its ul
     navList.appendChild(navLink);
 
     // Adding scroll action to nav link
@@ -53,7 +51,7 @@ function makeActive() {
   sectionsList.forEach((section) => {
     // Get the relative position for each section
     const box = section.getBoundingClientRect();
-    // if the section is in position make it active
+
     if (box.top <= 150 && box.bottom >= 150) {
       isActive(section);
     } else {
@@ -75,11 +73,9 @@ window.addEventListener("scroll", (e) => {
 
 // Scroll to anchor ID using scrollTO event
 function scrollToSection(navLink, section) {
-  // Adding "click" event to the nav bar link
   navLink.addEventListener("click", (e) => {
     e.preventDefault();
     if (section) {
-      // Scroll to the target section smoothly
       window.scrollTo({
         top: section.offsetTop,
         behavior: "smooth",
@@ -91,7 +87,7 @@ function scrollToSection(navLink, section) {
 function toggleNavbar() {
   // timeout id for calling clearTimeout
   let userScroll;
-  // onScroll show the header
+
   header.style.cssText = "opacity: 1; transition: ease 0.3s;";
   // clear any previus timeouts set by setTimeout()
   window.clearTimeout(userScroll);
@@ -103,16 +99,13 @@ function toggleNavbar() {
 
 // Set sections as active
 function isActive(section) {
-  // getting id for the active class
   const id = section.getAttribute("id");
-  // add  active class "your-active-class" to the current active section
   document.getElementById(id).classList.add("your-active-class");
 }
 
 function isNonActive(section) {
-  // getting the id for the active class
   const id = section.getAttribute("id");
-  // add active class "your-active-class" to current active section
+
   document.getElementById(id).classList.remove("your-active-class");
 }
 
