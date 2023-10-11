@@ -46,6 +46,7 @@ function navBuilder() {
   });
   navBar.appendChild(navList);
 }
+navBuilder();
 
 // Add class 'active' to section when near top of viewport
 function makeActive() {
