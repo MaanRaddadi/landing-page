@@ -1,9 +1,14 @@
-# Landing Page Project
+# Udacity Front End Developer Nanodegree Program:-
 
-## Instructions
+## Description:-
 
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+A Multi-section landing page, with a dynamically updating navigational menu based on the amount of content that is added to the page and other dynamic scrolling events, this project was done as part of the [Udacity's Front End Developer program](https://www.udacity.com/enrollment/nd0011/3.0.5).
 
-To get started, open `js/app.js` and start building out the app's functionality
+## Offical Project Description:-
 
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+This project aims to give you real-world scenarios of manipulating the DOM. The functionality you will be using serves two purposes: to prepare you for appending dynamically added data to the DOM, and to show you how javascript can improve the usability of an otherwise static site. This project barely touches the surface of what is possible, but it does use some incredibly common events, methods, and logic.
+
+## Links:-
+
+- [Live Site](https://maanraddadi.github.io/landing-page/)
+- [GitHub Repo](https://github.com/MaanRaddadi/landing-page)
