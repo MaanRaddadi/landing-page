@@ -68,7 +68,7 @@ section {
 .navbar__menu ul {
   padding-left: 0;
   margin: 0;
-  text-align: right;
+  text-align: center;
 }
 
 .navbar__menu li {
@@ -275,4 +275,19 @@ section.your-active-class .landing__container::after {
 
 .hidden {
   opacity: 0;
+}
+@media screen and (max-width: 376px) {
+  .menu__link {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 321px) {
+  .menu__link {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 426px) {
+  .main__hero {
+    height: 70vh;
+  }
 }
